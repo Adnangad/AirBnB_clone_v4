@@ -92,3 +92,14 @@ section.filters > button:hover {
 .checkBox {
 	margin-left: 10px;
 }
+.amenities h4 {
+	list-style-type: none;
+	padding: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.amenities h4 li {
+	display: inline-block;
+	margin-right: 10px;
+}
