@@ -28,6 +28,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $.ajax({
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
+    method: "POST",
     contentType: 'application/json',
     data: JSON.stringify({}),
     success: function (response) {
