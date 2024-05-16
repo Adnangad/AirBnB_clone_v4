@@ -1,3 +1,4 @@
+const HOST = 54.87.172.130;
 $(document).ready(function () {
   const ls = {};
   $('.checkBox').change(function () {
@@ -14,7 +15,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $.ajax({
-    url: 'http://0.0.0.0:5001/api/v1/status/',
+    url: 'http://$(HOST):5001/api/v1/status/',
     method: 'GET',
     success: function (response) {
       if (response.status === 'OK') {
